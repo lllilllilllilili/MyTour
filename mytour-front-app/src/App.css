@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+.app {
+  display: flex;
+}
+.info-wrapper {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+.map-wrapper {
+  flex: 2;
+  position: relative;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+}
+
+.tour-info {
+  border: 1px solid #ccc;
+  padding: 50px 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+}
+
+.info-result {
+  border: 1px solid #ccc;
+  padding: 50px 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 20px;
+}
+.img-wrapper {
+  display: flex;
+}
+.img-style {
+  margin-left: auto;
+}
+.map-wrapper .place-search {
+  position: absolute;
+  top: 10vh;
+  left: 35vw;
+  width: 30%;
+}
+
+.map-wrapper .card-wrapper {
+  position: absolute;
+  width: 18rem;
+  transform: scale(0.5) translate(-50%, 120%);
+  bottom: 20vh;
+  box-shadow: 10px 5px 5px rgb(0 0 0 / 20%);
+}
+
+.map-wrapper .card-wrapper2 {
+  position: absolute;
+  width: 18rem;
+  transform: scale(0.5) translate(200%, 120%);
+  bottom: 20vh;
+  box-shadow: 10px 5px 5px rgb(0 0 0 / 20%);
+}
+
+.map-wrapper .card-wrapper3 {
+  position: absolute;
+  width: 18rem;
+  transform: scale(0.5) translate(450%, 120%);
+  bottom: 20vh;
+  box-shadow: 10px 5px 5px rgb(0 0 0 / 20%);
+}
