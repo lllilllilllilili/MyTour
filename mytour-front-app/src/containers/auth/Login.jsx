@@ -3,9 +3,12 @@ import React from 'react';
 const Login = () => {
     return (
         <div>
-            LOGIN
+            
         </div>
     )
+}
+const loginStyle = {
+    
 }
 
 export default Login;
