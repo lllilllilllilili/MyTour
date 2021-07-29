@@ -1,3 +1,7 @@
+`react-redux-tutorial` 에서 소스코드 참고 부탁드립니다.
+
+## Redux 설치하기
+
 `npm create react-app react-redux-tutorial`
 
 `cd react-redux-tutorial`
