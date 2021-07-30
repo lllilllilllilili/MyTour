@@ -2,10 +2,13 @@ import React from 'react';
 
 const Login = () => {
     return (
-        <div>
-            LOGIN
+        <div className>
+            
         </div>
     )
+}
+const loginStyle = {
+    
 }
 
 export default Login;
