@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 
-import Home from './containers/Home';
+import Home from './Pages/Home';
 import Login from './containers/auth/Login';
 import TourRouteIndex from './containers/tourRoute/TourRouteIndex'
 import Signup from './Pages/Auth/Signup';

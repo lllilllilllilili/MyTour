@@ -1,0 +1,83 @@
+.main_search_wrap {
+    height: 571px;
+    width: 100%;
+}
+
+.main_search_images {
+    width: 100%;
+    height: 100%;
+}
+
+.image_slider_0 {
+    background-image: url('../../image/main/alpine.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.image_slider_1 {
+    background-image: url('../../image/main/beach.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.image_slider_2 {
+    background-image: url('../../image/main/monument.jpg');
+    width: 100%;
+    height: 100%;
+}
+
+.search_background {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.search_background .search_data_input {
+    width: 490px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    border-radius: 0px 0px 0px 5px;
+}
+
+div.search_type > button {
+    border: none;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+}
+
+div.search_type > button.on {
+    background-color: aquamarine;
+    z-index: 2;
+}
+
+div.search_type > button.off {
+    background-color: aliceblue;
+    z-index: 0;
+}
+
+.search_tour_btn {
+    left: -2%;
+}
+
+.search_btn {
+    width: 90px;
+    height: 55px;
+    border: none;
+    border-radius: 0px 7px 7px 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 1px;
+}
+
+.search_data_input_wrap .off {
+    display: none
+}
+
+@media screen and (max-width: 768px) {
+    /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
+}
+

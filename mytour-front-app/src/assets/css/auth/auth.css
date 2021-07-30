@@ -1,0 +1,56 @@
+div.signup_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.signup_type_wrap {
+    width: 430px;
+    padding: 48px;
+    margin: 30px auto;
+    border: 1px solid #dee2e6;
+    border-radius: 2px;
+}
+
+div.page_title {
+    text-align: center;
+    padding-top: 45px;
+    font-size: 130%;
+}
+
+div.signup_type {
+    display: grid;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    height: 245px;
+    align-content: space-evenly;
+}
+
+div.signup_type a {
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+div.signup_type div.kakao_signup {
+    background-color: #f7e317;
+    color: #381e1f;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #f7e317;
+}
+
+div.signup_type div {
+    height: 50px;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    border-radius: 2px;
+    border: 0;
+    box-shadow: inset 0 0 0 1px #ced4da;
+    background-color: #fff;
+    font-weight: 500;
+    color: #343a40;
+}
