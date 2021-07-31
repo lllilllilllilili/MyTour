@@ -24,7 +24,7 @@ const Search = () => {
     }
 
     return (
-      <Fragment>
+      <div className="home_search">
         <div className="search_type">
           <button 
             name="search_spot_btn"
@@ -52,7 +52,7 @@ const Search = () => {
             onChange={handleDataChange}/>
           <button className="search_btn">SEARCH</button>
         </div>
-      </Fragment>
+      </div>
     )
 }
 
