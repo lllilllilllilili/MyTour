@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Counter from "../components/Counter";
 //////////액션 생성 함수///////
-import { increase, decrease } from "../modules/counter";
+import counter, { increase, decrease } from "../modules/counter";
 
 const CounterContainer = ({ number, increase, decrease }) => {
   return (
