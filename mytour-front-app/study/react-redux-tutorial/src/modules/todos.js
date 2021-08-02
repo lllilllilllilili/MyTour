@@ -46,6 +46,7 @@ const initialState = {
 };
 
 function todos(state = initialState, action) {
+  console.log(action);
   switch (action.type) {
     case CHANGE_INPUT:
       return {
