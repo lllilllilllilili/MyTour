@@ -1,0 +1,33 @@
+div.review_wrap {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: space-between;
+}
+
+.review_spot_info {
+    display: flex;
+}
+
+div.review_inputs {
+    display: flex;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.review_inputs form {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    padding: 55px;
+}
+
+div.complex_score,
+div.view_score {
+    margin-top: 10px;
+}
+
+p.score_title {
+    margin-bottom: 5px;
+}

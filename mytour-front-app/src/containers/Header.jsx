@@ -26,6 +26,7 @@ const Header = () => {
         <div className="menu_wrap">
           <div className="menu">
             <Link to="">여행지</Link>
+            <Link to="">여행PLAN추천</Link>
             <Link to="">여행후기</Link>
           </div>
           <div className="menu_search">

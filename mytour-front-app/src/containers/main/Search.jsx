@@ -1,4 +1,5 @@
-import React, {useState, Fragment} from 'react'
+import React, {useState, Fragment} from 'react';
+import { IoSearch } from "react-icons/io5";
 
 const Search = () => {
     const [searchData, setSearchData] = useState('');
@@ -50,7 +51,7 @@ const Search = () => {
             className={"search_data_input "+searchTypes.tour}
             placeholder="여행코스를 찾고 계신가요?✈" 
             onChange={handleDataChange}/>
-          <button className="search_btn">SEARCH</button>
+          <button className="search_btn"><IoSearch /></button>
         </div>
       </div>
     )
