@@ -1,4 +1,4 @@
-import { createAction, handleAction } from "redux-actions";
+import { createAction, handleActions } from "redux-actions";
 
 //액션 타입
 const INCREASE = "counter/INCREASE";
@@ -32,10 +32,10 @@ const initialState = {
 // }
 
 //첫번쨰 파라미터로 액션에 대한 업데이트 함수를 작성하고 두번쨰 파라미터에 초기 상태를 넣어준다.
-const counter = handleAction(
+const counter = handleActions(
   {
     [INCREASE]: (state, action) => ({ number: state.number + 1 }),
-    [DECREASE]: (state, action) => ({ number: state.number + 1 }),
+    [DECREASE]: (state, action) => ({ number: state.number - 1 }),
   },
   initialState
 );
