@@ -57,6 +57,7 @@ const initialState = {
       done: false,
     },
   ],
+  ingyu: "",
 };
 
 // function todos(state = initialState, action) {
