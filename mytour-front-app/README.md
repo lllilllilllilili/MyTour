@@ -1,4 +1,4 @@
-## Develop Lab History
+## Development Lab History
 
 ### 21년 7월 21일
 
