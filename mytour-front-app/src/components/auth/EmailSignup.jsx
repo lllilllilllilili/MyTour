@@ -1,22 +1,33 @@
 import React, { useState, useEffect }  from 'react';
 import {Link} from 'react-router-dom';
 
-const EmailSignup = () => {
-  
-  const [userInfo, setUserInfo] = useState({
-    email: '',
-    password: '',
-    password2: '',
-    memberAgree: false,
-    privacyAgree: false,
-    locationAgree: false
-  })
+const EmailSignup = ({
+  userInfo, 
+  userInfoError, 
+  setUserInfoEmail, 
+  setUserInfoPassword, 
+  setUserInfoPassword2, 
+  setUserInfoMemberAgree,
+  setUserInfoPrivacyAgree, 
+  setUserInfoLocationAgree, 
+  setUserInfoErrorEmail, 
+  setUserInfoErrorPassword, 
+  setUserInfoErrorPassword2,
+  }) => {
+  // const [userInfo, setUserInfo] = useState({
+  //   email: '',
+  //   password: '',
+  //   password2: '',
+  //   memberAgree: false,
+  //   privacyAgree: false,
+  //   locationAgree: false
+  // })
 
-  const [userInfoError, setUserInfoError] = useState({
-    email: false,
-    password: false,
-    password2: false
-  })
+  // const [userInfoError, setUserInfoError] = useState({
+  //   email: false,
+  //   password: false,
+  //   password2: false
+  // })
   
   const ErrorMessages = {
     emailMsg: '올바른 이메일 형식이 아닙니다.',
@@ -26,39 +37,72 @@ const EmailSignup = () => {
   
   const handleChange = (event) => {
     const { name, value } = event.target;
+    console.log(name+" "+value);
+    console.log([name]);
+    //name : email or password, value : 빈칸안에 들어가는 값을 의미
+    //ex) email 21312123
     validationCheck(name, value);
-    setUserInfo({ ...userInfo, [name]: value });
+    if(name === "email")
+      setUserInfoEmail(value);
+    else if(name === "password")
+      setUserInfoPassword(value);
+    else if(name === "password2")
+      setUserInfoPassword2(value);
+    //setUserInfo({ ...userInfo, [name]: value });
   };
 
   const handleAgreementChange = (event) => {
     const {name, checked} = event.target;
-    setUserInfo({...userInfo, [name]: checked})
-    
+    console.log([name]+" "+checked);
+    if(name === "memberAgree")
+      setUserInfoMemberAgree(checked)
+    else if(name === "privacyAgree")
+      setUserInfoPrivacyAgree(checked)
+    else if(name === "locationAgree")
+      setUserInfoLocationAgree(checked)
+    //setUserInfo({...userInfo, [name]: checked})
+   
   }
 
   const handleAgreementAll = (event) => {
     const {checked} = event.target;
-    setUserInfo({
-      ...userInfo,
-      ['memberAgree']: checked, 
-      ['privacyAgree']: checked,
-      ['locationAgree']: checked})
+    console.log(checked);
+    setUserInfoMemberAgree(checked)
+    setUserInfoLocationAgree(checked)
+    setUserInfoPrivacyAgree(checked)
+    // setUserInfo({
+    //   ...userInfo,
+    //   ['memberAgree']: checked, 
+    //   ['privacyAgree']: checked,
+    //   ['locationAgree']: checked})
   }
 
   const validationCheck = (name, value) => {
     if (name==='email') {
       var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i; 
-      if (value.match(regExp)) setUserInfoError({...userInfoError, ['email']: false})
-      else setUserInfoError({...userInfoError, ['email']: true})
+      if (value.match(regExp)) 
+        setUserInfoErrorEmail(false);
+        //setUserInfoError({...userInfoError, ['email']: false})
+      else 
+        setUserInfoErrorEmail(true);
+      //setUserInfoError({...userInfoError, ['email']: true})
     }
     else if (name==='password') {
       var regExp = /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+]).{8,16}$/i; 
-      if (value.match(regExp)) setUserInfoError({...userInfoError, ['password']: false})
-      else setUserInfoError({...userInfoError, ['password']: true})
+      if (value.match(regExp)) 
+        setUserInfoErrorPassword(false);
+      //setUserInfoError({...userInfoError, ['password']: false})
+      else 
+        setUserInfoErrorPassword(true);
+      //setUserInfoError({...userInfoError, ['password']: true})
     }
     else if (name==='password2') {
-      if (userInfo.password===value) setUserInfoError({...userInfoError, ['password2']: false})
-      else setUserInfoError({...userInfoError, ['password2']: true})
+      if (userInfo.password===value) 
+        setUserInfoErrorPassword2(false);
+      //setUserInfoError({...userInfoError, ['password2']: false})
+      else 
+        setUserInfoErrorPassword2(true);
+      //setUserInfoError({...userInfoError, ['password2']: true})
     }
   }
 

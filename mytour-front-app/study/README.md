@@ -2,11 +2,11 @@
 
 ## Redux 설치하기
 
-`npm create react-app react-redux-tutorial`
+Step1 - 리덕스 활용하기 위한 프로젝트 생성 : `npm create react-app react-redux-tutorial`
 
-`cd react-redux-tutorial`
+Step2 - 이동 : `cd react-redux-tutorial`
 
-`npm add redux react-redux`
+Step3 - 리덕스 라이브러리 설치 : `npm add redux react-redux`
 
 ## Step1. UI 준비하기
 

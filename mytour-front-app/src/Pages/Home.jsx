@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom';
 
 import '../assets/css/home/home.css'
 
-import MainSearch from '../containers/main/MainSearch';
+import MainSearch from '../components/main/MainSearch';
 
 const Home = () => {
     return (
