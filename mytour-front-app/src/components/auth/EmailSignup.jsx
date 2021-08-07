@@ -1,4 +1,5 @@
 import React, { useState, useEffect }  from 'react';
+import {Link} from 'react-router-dom';
 
 const EmailSignup = ({
   userInfo, 
@@ -203,6 +204,14 @@ const EmailSignup = ({
               type="submit" 
               value="회원가입"
               style={emailSignupStyle.signup_submit}/>
+            <hr></hr>
+            <div 
+              className="signup_type"
+              style={emailSignupStyle.signup_type}>
+              <Link to="email_sign_up"><div className="kakao_signup">카카오로 회원가입</div></Link>
+              <Link to="email_sign_up"><div className="google_signup">페이스북으로 회원가입</div></Link>
+              <Link to="email_sign_up"><div className="google_signup">구글로 회원가입</div></Link>
+           </div>
           </form>
         </div>
       </div>
@@ -260,6 +269,14 @@ const emailSignupStyle = {
     backgroundColor: '#7ADEE2',
     height: '45px',
     borderRadius: '3px'
+  },
+  signup_type: {
+    display: 'grid',
+    fontSize: '14px',
+    fontWeight: '500',
+    lineHeight: '16px',
+    height: '200px',
+    alignContent: 'space-evenly'
   }
 }
 export default EmailSignup;
