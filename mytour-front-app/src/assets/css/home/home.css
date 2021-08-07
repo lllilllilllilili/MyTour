@@ -82,16 +82,21 @@ div.search_type > button.off {
 }
 
 .search_btn {
-    width: 90px;
+    width: 80px;
     height: 55px;
     border: none;
     border-radius: 0px 7px 7px 0px;
-    padding-bottom: 0px;
+    padding-bottom: 1px;
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 1px;
+    padding-top: 0px;
     background-color:#135589;
     color: white;
+    font-size: 1.4em;
+}
+
+.search_data_input_wrap {
+    display: flex;
 }
 
 .search_data_input_wrap .off {
