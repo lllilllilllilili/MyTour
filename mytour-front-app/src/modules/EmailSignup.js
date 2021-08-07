@@ -2,7 +2,7 @@ import { createAction, handleActions } from "redux-actions";
 
 //액션에 타입을 정의 할때는 '모듈 이름/액션 이름' 형태로 작성합니다.
 
-const USER_INFO_EMAIL = "userInfo/USER_INFO_EMAIL";
+const USER_INFO_EMAIL = "EmailSignup/USER_INFO_EMAIL";
 const USER_INFO_PASSWORD = "EmailSignup/USER_INFO_PASSWORD";
 const USER_INFO_PASSWORD2 = "EmailSignup/USER_INFO_PASSWORD2";
 const USER_INFO_MEMBERAGREE = "EmailSignup/USER_INFO_MEMBERAGREE";
