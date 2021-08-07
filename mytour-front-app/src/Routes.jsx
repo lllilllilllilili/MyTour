@@ -1,12 +1,12 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 
-import Home from './containers/Home';
-import Login from './containers/auth/Login';
-import TourRouteIndex from './containers/tourRoute/TourRouteIndex'
+import Home from './Pages/Home';
+import Login from './components/auth/Login';
+import TourRouteIndex from './components/tourRoute/TourRouteIndex'
 import Signup from './Pages/Auth/Signup';
-import EmailSignup from './containers/auth/EmailSignup'
-
+//import EmailSignup from './components/auth/EmailSignup'
+import EmailSignupContainer from "./containers/EmailSignupContainer"
 const Routes = () => {
   return (
     <Switch>
@@ -14,7 +14,7 @@ const Routes = () => {
       <Route exact path="/login" component={Login} />
       <Route path="/mytour" component={TourRouteIndex}/>
       <Route exact path="/signup" component={Signup} />
-      <Route path="/email_sign_up" component={EmailSignup}/>
+      <Route path="/email_sign_up" component={EmailSignupContainer}/>
     </Switch>
   )
 }

@@ -10,7 +10,7 @@ const REMOVE = "todos/REMOVE";
 //   input,
 // });
 
-export const changeInput = createAction(CHANGE_INPUT, (input) => input);
+export const changeInput = createAction(CHANGE_INPUT, (input2) => input2);
 
 let id = 3;
 // export const insert = (text) => ({

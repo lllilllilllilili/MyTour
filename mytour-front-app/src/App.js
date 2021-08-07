@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 
 import Header from "./containers/Header";
 
-import Home from "./containers/Home";
 import Routes from "./Routes";
 
 import "./App.css";

@@ -79,3 +79,54 @@
   color: red;
   font-size: 80%;
 }
+
+div.nav_wrap {
+  display: grid;
+  height: 108px;
+  align-content: stretch;
+  border-bottom: 1px solid lightgray;
+  z-index: 3;
+}
+
+div.nav_wrap hr {
+  margin: 0px;
+}
+
+div.nav_wrap header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+div.nav_wrap header a {
+  text-decoration: none;
+  font-size: 1.2em;
+  padding-right: 15px;
+  color: #12043E;
+  font-weight: 600;
+}
+
+div.nav_wrap header div.feats_wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.nav_wrap div.menu_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.nav_wrap div.menu_wrap a {
+  text-decoration: none;
+  font-size: 1.05em;
+  padding-right: 20px;
+  color: #12043E;
+}
+
+div.nav_wrap div.menu_wrap input {
+  border-radius: 4px;
+  width: 230px;
+  border: 1px solid #dbdbdb;
+  height: 33px;
+
+}
