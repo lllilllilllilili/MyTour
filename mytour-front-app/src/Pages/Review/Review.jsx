@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../../assets/css/review/review.css';
-import Star from  '../../utils/Star';
+import Star from  '../../lib/utils/Star';
 
 const Review = () => {
   return (
