@@ -1,13 +1,15 @@
 import CounterContainer from "./containers/CounterContainer";
 import TodosContainer from "./containers/TodosContainer";
+import SampleContainer from "./containers/SampleContainer";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <CounterContainer />
+      {/* <CounterContainer />
       <hr />
-      <TodosContainer />
+      <TodosContainer /> */}
+      <SampleContainer />
     </div>
   );
 }

@@ -24,12 +24,9 @@ const CounterContainer = ({ number, increase, decrease }) => {
 // });
 export default connect(
   // mapStateToProps, mapDispatchToProps
-  (k) => (
-    console.log(k),
-    {
-      number: k.counter.number,
-    }
-  ),
+  (k) => ({
+    number: k.counter.number,
+  }),
   {
     increase,
     decrease,
