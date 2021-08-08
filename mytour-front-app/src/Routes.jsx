@@ -7,8 +7,8 @@ import TourRouteIndex from './components/tourRoute/TourRouteIndex'
 import Signup from './Pages/Auth/Signup';
 //import EmailSignup from './components/auth/EmailSignup'
 import EmailSignupContainer from "./containers/EmailSignupContainer"
-
 import Review from './Pages/Review/Review'
+import SampleContainer from './containers/thunk-example/SampleContainer'
 
 const Routes = () => {
   return (
@@ -19,6 +19,7 @@ const Routes = () => {
       <Route path="/mytour" component={TourRouteIndex}/>
       <Route exact path="/signup" component={Signup} />
       <Route path="/email_sign_up" component={EmailSignupContainer}/>
+      <Route path="/sample" component={SampleContainer}/>
     </Switch>
   )
 }
