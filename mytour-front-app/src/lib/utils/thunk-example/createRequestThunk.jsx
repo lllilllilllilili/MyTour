@@ -1,4 +1,4 @@
-import { startLoading, finishLoading } from "../modules/loading";
+import { startLoading, finishLoading } from "../../../modules/thunk-example/loading";
 
 export default function createRequestThunk(type, request) {
   const SUCCESS = `${type}_SUCCESS`;

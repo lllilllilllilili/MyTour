@@ -63,7 +63,7 @@ const initialUserInfoError = {
   password2: false,
 };
 
-const userInfo = handleActions(
+export const userInfo = handleActions(
   {
     [USER_INFO_EMAIL]: (state, { payload: email }) => ({ ...state, email }),
     [USER_INFO_PASSWORD]: (state, { payload: password }) => ({
@@ -90,7 +90,7 @@ const userInfo = handleActions(
   initialUserInfo
 );
 
-const userInfoError = handleActions(
+export const userInfoError = handleActions(
   {
     [USER_INFO_ERROR_EMAIL]: (state, { payload: email }) => ({
       ...state,
@@ -107,5 +107,3 @@ const userInfoError = handleActions(
   },
   initialUserInfoError
 );
-
-export default { userInfo, userInfoError };
