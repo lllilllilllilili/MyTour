@@ -16,4 +16,4 @@
 
 - `react-redux` 라이브러리 도입, Container-Component 디렉토리 구조로 변경
 
-- `redux-thunk, logging` 구조, middleware로 비동기 처리
+- `redux-thunk, redux-logging` 구조, middleware로 비동기 처리
