@@ -115,7 +115,7 @@ const userInfo = handleActions(
 
 ## Redux Middleware(redux-logger, redux-thunk)
 
-**`http:localhost:8080/sample` 로 접속하면 Redux Middleware를 적용한 sample로 Routing 됩니다. **
+`http:localhost:8080/sample` 로 접속하면 Redux Middleware를 적용한 sample로 Routing 됩니다. 
 
 Middleware : 액션을 디스패치했을 때 리듀서에서 이를 처리하기 전에 사전에 지정된 작업들을 정의합니다.
 
